@@ -17,6 +17,7 @@ LOCAL_PATH := vendor/pixelstyle
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
     GooglePermissionControllerOverlay \
+    Longshot \
     MicropaperPrebuilt \
     NexusLauncherRelease \
     NexusWallpapersStubPrebuilt2019 \
@@ -57,6 +58,10 @@ PRODUCT_PACKAGES += \
 # Gestures
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+
+# Hidden api whitelisted apps
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/etc/sysconfig/evolution-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/evolution-hiddenapi-package-whitelist.xml
 
 # IME
 PRODUCT_PRODUCT_PROPERTIES += \

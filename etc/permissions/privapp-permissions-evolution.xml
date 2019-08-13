@@ -38,6 +38,10 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.MANAGE_DEVICE_ADMINS"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.android.screenshot">
+        <permission name="android.permission.READ_FRAME_BUFFER"/>
+    </privapp-permissions>
+
     <privapp-permissions package="com.android.settings">
         <permission name="android.permission.RESET_BATTERY_STATS"/>
         <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
