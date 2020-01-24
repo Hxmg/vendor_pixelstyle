@@ -49,6 +49,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.notification_sound=Popcorn.ogg \
     ro.config.alarm_alert=Bright_morning.ogg
 
+# Offline charger
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
 # Gestures
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
